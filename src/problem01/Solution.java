@@ -7,27 +7,34 @@ package problem01;
 public class Solution {
 
     public boolean validMountainArray(int[] arr) {
-
-        if(arr.length < 3) return false;
-
-        boolean flag = false;
-
-        for(int i = 1; i < arr.length-1; i++) {
-            if(arr[i-1] <= arr[i] && arr.length > 3) {
-                flag = true;
+        // 0,2,3,4,5,2,1,0
+        int peak = -1;
+        int peakIndex = -1;
+        boolean ascending  = false;
+        for(int i = 1; i < arr.length; i++) {
+            if(arr[i-1] < arr[i]) {
+                ascending = true;
                 continue;
-            } else if(arr[i-1] >= arr[i]) {
-                flag = true;
-                continue;
-            } else {
-                flag = false;
-                break;
             }
 
+            if(!ascending) return false;
 
+            if(arr[i-1] == arr[i]) return false;
+
+            if(arr[i-1] > arr[i] & ascending) {
+                peak = arr[i-1];
+                peakIndex = i;
+                break;
+            }
         }
 
-        return flag;
 
+
+        for(int i = peakIndex + 1; i < arr.length; i++) {
+            if(arr[i] < peak && arr[i-1] > arr[i]) continue;
+            return false;
+        }
+
+        return true;
     }
 }

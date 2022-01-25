@@ -16,7 +16,7 @@ class SolutionTest {
 
     @Test
     void testValidMountainArray() {
-        assertTrue(solution.validMountainArray(new int[] {0,3,2,1}));
+        assertTrue(solution.validMountainArray(new int[] {4,4,3,2,1}));
     }
 
 }
