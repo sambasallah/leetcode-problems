@@ -1,5 +1,9 @@
 package problem01;
 
+/**
+ * @author Samba Sallah
+ * Running Time O(n)
+ */
 public class Solution {
 
     public boolean validMountainArray(int[] arr) {
