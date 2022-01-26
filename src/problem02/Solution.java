@@ -18,7 +18,7 @@ public class Solution {
 
         for(int i = 0; i < nums.length; i++) {
             int diff = target - nums[i];
-            if(map.containsKey(diff)) {
+            if(map.containsKey(diff) && map.get(diff) != i) {
                 return new int[]{i,map.get(diff)};
             }
         }
