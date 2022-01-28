@@ -16,7 +16,7 @@ class SolutionTest {
 
     @Test
     void testIsPalindrome() {
-        String palindrome = " ";
+        String palindrome = "A man, a plan, a canal: Panama";
         assertTrue(solution.isPalindrome(palindrome));
     }
 
