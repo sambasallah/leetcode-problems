@@ -3,6 +3,10 @@ package problem09;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author Samba Sallah
+ * Running Time O(n)
+ */
 public class Solution {
 
     public Character maximumOccurringCharacter(String str) {

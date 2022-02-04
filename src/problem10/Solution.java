@@ -5,20 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author  Samba Sallah
+ * Running Time O(n)
+ */
 public class Solution {
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        List<String> devices = new ArrayList<>();
-        devices.add("TV");
-        devices.add("Switch");
-        devices.add("TV");
-        devices.add("Switch");
-        devices.add("TV");
-        devices.add("Switch");
-
-        System.out.println(solution.uniqueDeviceNames(devices));
-    }
 
     public List<String> uniqueDeviceNames(List<String> deviceNames) {
         List<String> unique = new ArrayList<>();
