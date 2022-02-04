@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Solution {
 
-    public Character maximumOccuringCharacter(String str) {
+    public Character maximumOccurringCharacter(String str) {
         Map<Character,Integer> map = new HashMap<>();
         Integer max = 0;
         Character character = ' ';

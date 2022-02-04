@@ -15,9 +15,9 @@ class SolutionTest {
     }
 
     @Test
-    void testMaximumOccuringCharacter() {
+    void testMaximumOccurringCharacter() {
         String str = "abbcbbccc";
-        assertEquals('b',solution.maximumOccuringCharacter(str));
+        assertEquals('b',solution.maximumOccurringCharacter(str));
     }
 
 }
