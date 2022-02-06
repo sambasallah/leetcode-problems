@@ -1,5 +1,9 @@
 package problem12;
 
+/**
+ * @author Samba Sallah
+ * Running Time O(n)
+ */
 public class Solution {
 
     public boolean isPalindrome(String str) {

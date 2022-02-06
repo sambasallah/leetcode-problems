@@ -1,9 +1,11 @@
 package problem11;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @author Samba Sallah
+ * Running Time O(n^2)
+ */
 public class Solution {
 
     public int maxDifference(List<Integer> px) {
