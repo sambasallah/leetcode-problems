@@ -2,6 +2,10 @@ package problem19;
 
 public class Solution {
 
+    public static void main(String[] args) {
+
+    }
+
     public int reverse(int x) {
         int reverse = 0;
         int digit = x;
