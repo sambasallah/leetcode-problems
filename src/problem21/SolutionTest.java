@@ -16,7 +16,7 @@ class SolutionTest {
 
     @Test
     void testIsValid() {
-        String s = "{}()[]";
+        String s = "({}()[])";
         assertTrue(solution.isValid(s));
     }
 
